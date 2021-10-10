@@ -1,0 +1,460 @@
+@charset "UTF-8";
+.d-flex {
+  display: flex;
+}
+
+.dir-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.hv-50 {
+  height: 50vh;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.hv-75 {
+  height: 75vh;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.hv-100 {
+  height: 100vh;
+}
+
+.pos-fix {
+  position: fixed;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+.mrb-2 {
+  margin-bottom: 4px;
+}
+
+.mrt-2 {
+  margin-top: 4px;
+}
+
+.pdb-2 {
+  padding-bottom: 4px;
+}
+
+.pdt-2 {
+  padding-top: 4px;
+}
+
+.mrb-4 {
+  margin-bottom: 8px;
+}
+
+.mrt-4 {
+  margin-top: 8px;
+}
+
+.pdb-4 {
+  padding-bottom: 8px;
+}
+
+.pdt-4 {
+  padding-top: 8px;
+}
+
+.mrb-6 {
+  margin-bottom: 12px;
+}
+
+.mrt-6 {
+  margin-top: 12px;
+}
+
+.pdb-6 {
+  padding-bottom: 12px;
+}
+
+.pdt-6 {
+  padding-top: 12px;
+}
+
+.mrb-8 {
+  margin-bottom: 16px;
+}
+
+.mrt-8 {
+  margin-top: 16px;
+}
+
+.pdb-8 {
+  padding-bottom: 16px;
+}
+
+.pdt-8 {
+  padding-top: 16px;
+}
+
+.mrb-10 {
+  margin-bottom: 20px;
+}
+
+.mrt-10 {
+  margin-top: 20px;
+}
+
+.pdb-10 {
+  padding-bottom: 20px;
+}
+
+.pdt-10 {
+  padding-top: 20px;
+}
+
+.mrb-20 {
+  margin-bottom: 40px;
+}
+
+.mrt-20 {
+  margin-top: 40px;
+}
+
+.pdb-20 {
+  padding-bottom: 40px;
+}
+
+.pdt-20 {
+  padding-top: 40px;
+}
+
+.mrb-35 {
+  margin-bottom: 70px;
+}
+
+.mrt-35 {
+  margin-top: 70px;
+}
+
+.pdb-35 {
+  padding-bottom: 70px;
+}
+
+.pdt-35 {
+  padding-top: 70px;
+}
+
+.mrb-40 {
+  margin-bottom: 80px;
+}
+
+.mrt-40 {
+  margin-top: 80px;
+}
+
+.pdb-40 {
+  padding-bottom: 80px;
+}
+
+.pdt-40 {
+  padding-top: 80px;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+a.link {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: 0.2s;
+  font: 500 11px/11px "Inter";
+}
+a.link:hover, a.link:visited, a.link:active {
+  color: var(--color-deep-blue);
+}
+a.link.main {
+  font: 500 14px/14px "Inter";
+}
+
+body {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blue: #3369F3;
+  --color-deep-blue: #3369d2;
+  --color-gray: #999999;
+  --color-deep-gray: #1E1E1E;
+  --color-light-gray: #eaeaea;
+  --color-white: #fff;
+  --color-show: #fbfbfb;
+  --color-red: #ff0000;
+  --color-dark-overlay: rgba(0, 0, 0, .5);
+}
+
+.button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font: 500 11px/11px "Inter";
+  transition: 0.2s;
+}
+.button--simple {
+  color: var(--color-blue);
+  background-color: transparent;
+}
+.button--default {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+.button--default:hover {
+  background-color: var(--color-deep-blue);
+}
+
+.input {
+  position: relative;
+}
+.input .invalid {
+  position: absolute;
+  top: auto;
+  left: 0;
+  color: var(--color-red);
+  bottom: -14px;
+}
+
+.intro__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.intro__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  min-height: 450px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 12px;
+  font-family: "Inter";
+}
+.intro label {
+  color: var(--color-gray);
+  font: 300 10px/10px "Inter";
+}
+.intro input {
+  border: none;
+  border-bottom: 1px solid var(--color-blue);
+  padding: 7px 0;
+  width: 100%;
+  font: 300 13px/13px "Inter";
+}
+.intro input:focus {
+  outline: none;
+  border-color: --color-deep-blue;
+}
+.intro h1 {
+  font: 500 20px/20px "Inter";
+  color: var(--color-deep-gray);
+}
+.intro form {
+  flex: 1;
+}
+
+.errors {
+  background-color: #fff;
+}
+.errors h1 {
+  font: 500 40px/40px "Inter";
+  color: var(--color-deep-gray);
+}
+.errors h2 {
+  font: 500 20px/20px "Inter";
+  color: var(--color-deep-gray);
+}
+
+.back-to-chats {
+  width: 64px;
+  background-color: var(--color-show);
+  border-right: 1px solid var(--color-light-gray);
+  transition: 0.2s;
+}
+.back-to-chats:hover {
+  background-color: var(--color-light-gray);
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: relative;
+}
+.avatar::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.2s;
+  background: url("/avatar_dummy.621c34e4.svg") no-repeat center center;
+  font: 300 13px/14px "Inter";
+}
+.avatar:hover {
+  cursor: pointer;
+}
+.avatar:hover::after {
+  background-image: url("/avatar_dummy_hover.0b2413be.svg");
+  content: "Загрузить аватар";
+}
+
+.settings__content {
+  max-width: 510px;
+  width: 100%;
+  margin: 0 auto;
+}
+.settings h1 {
+  font: 600 16px/16px "Inter";
+}
+
+.field {
+  border-bottom: 1px solid var(--color-light-gray);
+}
+.field:last-of-type {
+  border-bottom: none;
+}
+.field__name {
+  font: 500 13px/13px "Inter";
+  color: var(--color-deep-gray);
+}
+.field__enter {
+  font: 300 13px/13px "Inter";
+  color: var(--color-deep-gray);
+  border: none;
+  padding: 10px 0;
+  width: 150px;
+}
+.field__enter:focus {
+  outline: none;
+}
+.field__text {
+  font: 500 13px/13px "Inter";
+}
+.field__text--blue {
+  color: var(--color-blue);
+}
+.field__text--red {
+  color: var(--color-red);
+}
+.field__text:hover {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.modal__overlay {
+  background: var(--color-dark-overlay);
+}
+.modal__window {
+  padding: 40px 30px;
+  background: var(--color-white);
+  border-radius: 12px;
+}
+.modal__status-directive {
+  font: 500 15px/20px "Inter";
+  color: var(--color-dark-gray);
+}
+.modal__filename {
+  font: 500 14px/16px "Inter";
+  color: var(--color-gray);
+}
+.modal .invalid {
+  color: var(--color-red);
+  font: 500 12px/12px "Inter";
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-dark-overlay);
+}
+.loader__icon {
+  animation: loading 2s linear infinite forwards;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=/main.b6459537.css.map */

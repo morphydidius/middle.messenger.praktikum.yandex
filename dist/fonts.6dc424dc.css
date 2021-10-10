@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-ExtraBold.80e94132.eot');
+    src: url('/Inter-ExtraBold.80e94132.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-ExtraBold.ae953be7.woff2') format('woff2'),
+        url('/Inter-ExtraBold.7b9b12b5.woff') format('woff'),
+        url('/Inter-ExtraBold.73980dc2.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-Bold.e57b8a2c.eot');
+    src: url('/Inter-Bold.e57b8a2c.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-Bold.b85bc4e6.woff2') format('woff2'),
+        url('/Inter-Bold.e9b17c93.woff') format('woff'),
+        url('/Inter-Bold.d5b2b3eb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-Black.7613ff55.eot');
+    src: url('/Inter-Black.7613ff55.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-Black.780af2ec.woff2') format('woff2'),
+        url('/Inter-Black.0ba69b11.woff') format('woff'),
+        url('/Inter-Black.0f47288d.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-Regular.3b6092c6.eot');
+    src: url('/Inter-Regular.3b6092c6.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-Regular.6586acd2.woff2') format('woff2'),
+        url('/Inter-Regular.49ba324d.woff') format('woff'),
+        url('/Inter-Regular.cbb2a765.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-Thin.f97f0b63.eot');
+    src: url('/Inter-Thin.f97f0b63.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-Thin.cfcde6e3.woff2') format('woff2'),
+        url('/Inter-Thin.b8797631.woff') format('woff'),
+        url('/Inter-Thin.561eebc2.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-Light.fb0fe054.eot');
+    src: url('/Inter-Light.fb0fe054.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-Light.dd89900a.woff2') format('woff2'),
+        url('/Inter-Light.527bde44.woff') format('woff'),
+        url('/Inter-Light.e68a22d9.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-Medium.7dc85fd3.eot');
+    src: url('/Inter-Medium.7dc85fd3.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-Medium.ac24165a.woff2') format('woff2'),
+        url('/Inter-Medium.32612232.woff') format('woff'),
+        url('/Inter-Medium.61643a21.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-SemiBold.331271f7.eot');
+    src: url('/Inter-SemiBold.331271f7.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-SemiBold.c53f2dca.woff2') format('woff2'),
+        url('/Inter-SemiBold.1ebff083.woff') format('woff'),
+        url('/Inter-SemiBold.67b5e5c9.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-ExtraLight.b615da56.eot');
+    src: url('/Inter-ExtraLight.b615da56.eot?#iefix') format('embedded-opentype'),
+        url('/Inter-ExtraLight.778e2d0a.woff2') format('woff2'),
+        url('/Inter-ExtraLight.541ccdc0.woff') format('woff'),
+        url('/Inter-ExtraLight.c9c1424d.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*# sourceMappingURL=/fonts.6dc424dc.css.map */
