@@ -1,0 +1,32 @@
+---
+stylesheets:
+  - ../../static/fonts/fonts.css
+  - ../styles/main.scss
+title: Список чатов
+chats:
+  - src: ../../static/img/cat.jpg
+    name: John
+    text: text1text1
+    time: '23:50'
+    newCount: 2
+  - name: Margareth
+    text: text2text2
+    time: '11:45'
+  - name: Jack
+    text: lorem ipsum
+    time: '10:33'
+  - name: Светлана
+    text: тестовый текст, проба
+    time: '01:30'
+  - name: Максим
+    text: Летят утки
+    time: '00:45'
+---
+
+{{#extend "base"}}
+  	{{#content "main"}}
+  		  <div class="d-flex w-100 hv-100">
+            {{> chats-sidebar }}
+        </div>
+  	{{/content}}
+{{/extend}}
