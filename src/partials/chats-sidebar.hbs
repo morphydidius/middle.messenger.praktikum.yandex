@@ -1,5 +1,11 @@
-<div class="chats">
-	{{#each chats}}
-		{{> chat}}
-	{{/each}}
+<div class="sidebar hv-100">
+	<div class="sidebar__header pdt-10 pdl-5 pdr-5">
+		{{> sidebar-links}}
+		{{> sidebar-search}}
+	</div>
+	<div class="chats">
+		{{#each chats}}
+			{{> chat}}
+		{{/each}}
+	</div>
 </div>

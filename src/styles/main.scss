@@ -7,6 +7,10 @@ body {
 	box-sizing: border-box;
 }
 
+div {
+	box-sizing: border-box;
+}
+
 :root {
 	--color-blue: #3369F3;
 	--color-deep-blue: #3369d2;
@@ -44,6 +48,21 @@ body {
 
 .input {
 	position: relative;
+
+	&--search {
+		input[type=search] {
+			border-radius: 5px;
+			padding: 10px 10px 10px 30px;
+			@include font(12,12,'Inter',500);
+			color: var(---color-gray);
+			border: none;
+			background: var(--color-light-gray) url('../../static/img/search.svg') no-repeat left 8px center;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
 
 	.invalid {
 		position: absolute;
@@ -248,13 +267,27 @@ body {
     }
 }
 
+$sidebar-header-height: 102px;
+
+.sidebar {
+	&__header {
+		height: $sidebar-header-height;
+		background-color: var(--color-snow);
+	}
+	&__links {
+		@include font(12,12,'Inter',500);
+		color: var(--color-gray);
+	}
+}
+
 .chats {
 	width: 310px;
-	height: 100%;
+	height: calc(100% - 102px);
 	background-color: var(--color-snow);
 	border-right: 1px solid var(--color-light-gray);
 	padding: 10px 0;
 	box-sizing: border-box;
+	overflow-y: scroll;
 }
 
 .chat {
@@ -275,6 +308,7 @@ body {
 		border-radius: 50%;
 		background-color: var(--color-gray);
 		overflow: hidden;
+		flex-shrink: 0;
 
 		img {
 			width: 100%;
