@@ -1,0 +1,15 @@
+<div class="chat__header w-100 d-flex justify-content-between">
+	<div class="d-flex justify-content-left align-items-center">
+		<div class="chat__avatar chat__avatar--small d-flex justify-content-center align-items-center mrr-6">
+			{{#if userPic}}
+				<img src="{{ userPic }}">
+			{{/if}}
+		</div>
+		<div class="chat__username">
+			{{ userName }}
+		</div>
+	</div>
+	<div class="chat__menu h-100 d-flex justify-content-center align-items-center">
+		<img src="../../static/img/chat_menu.svg">
+	</div>
+</div>

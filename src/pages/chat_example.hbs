@@ -1,0 +1,45 @@
+---
+stylesheets:
+  - ../../static/fonts/fonts.css
+  - ../styles/main.scss
+title: Список чатов
+chats:
+  - src: ../../static/img/cat.jpg
+    name: John
+    text: text1text1
+    time: '23:50'
+    newCount: 2
+  - name: Светлана
+    text: тестовый текст, проба
+    time: '01:30'
+  - src: ../../static/img/dog.jpg
+    name: Максим
+    text: Летят утки
+    time: '00:45'
+    newCount: 1
+    active: true
+  - name: Вероника
+    text: Сегодня в 3.30 произошло странное
+    time: 'Вчера'
+  - name: Анатолий
+    text: Обещал вернуть, возвращаю
+    time: 'Вчера'
+userName: Максим
+userPic: ../../static/img/dog.jpg
+replicas:
+  - text: Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну.
+    another: true
+    time: '14:34'
+  - text: Круто!
+    mine: true
+    time: '15:20'
+---
+
+{{#extend "base"}}
+  	{{#content "main"}}
+  		<div class="d-flex w-100 hv-100">
+        	{{> chats-sidebar }}
+            {{> chats-dialog }}
+        </div>
+  	{{/content}}
+{{/extend}}
