@@ -1,5 +1,7 @@
 ### [Ссылка на PR](https://github.com/morphydidius/middle.messenger.praktikum.yandex/pull/1)
 
+### [Просмотр в Netlify](https://friendly-kepler-3d2c9f.netlify.app/)
+
 
 ### Ветка, в которой делаете задания спринта, должна называться sprint_i, где i - номер спринта. Не переименовывайте её.
 
