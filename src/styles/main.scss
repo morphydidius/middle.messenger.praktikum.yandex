@@ -48,28 +48,20 @@ div {
 
 .input {
 	position: relative;
+}
 
-	&--search {
-		input[type=search] {
-			border-radius: 5px;
-			padding: 10px 10px 10px 30px;
-			@include font(12,12,'Inter',500);
-			color: var(---color-gray);
-			border: none;
-			background: var(--color-light-gray) url('../../static/img/search.svg') no-repeat left 8px center;
+input[type=search] {
+	border-radius: 5px;
+	padding: 10px 10px 10px 30px;
+	@include font(12,12,'Inter',500);
+	color: var(---color-gray);
+	border: none;
+	background: var(--color-light-gray) url('../../static/img/search.svg') no-repeat left 8px center;
+	width: 100%;
+	text-align: center;
 
-			&:focus {
-				outline: none;
-			}
-		}
-	}
-
-	.invalid {
-		position: absolute;
-		top: auto;
-		left: 0;
-		color: var(--color-red);
-		bottom: -14px;
+	&:focus {
+		outline: none;
 	}
 }
 
@@ -183,6 +175,7 @@ div {
 
 .field {
 	border-bottom: 1px solid var(--color-light-gray);
+	position: relative;
 
 	&:last-of-type {
 		border-bottom: none;
@@ -193,12 +186,12 @@ div {
 		color: var(--color-deep-gray);
 	}
 
-	&__enter {
+	&__enter, &__enter input {
 		@include font(13,13,'Inter',300);
 		color: var(--color-deep-gray);
 		border: none;
-		padding: 10px 0;
 		width: 150px;
+		text-align: right;
 
 		&:focus {
 			outline: none;
@@ -218,6 +211,14 @@ div {
 		&:hover {
 			cursor: pointer;
 		}
+	}
+
+	.invalid {
+		position: absolute;
+		top: auto;
+		left: 0;
+		color: var(--color-red);
+		bottom: -14px;
 	}
 }
 

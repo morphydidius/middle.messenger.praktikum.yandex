@@ -41,8 +41,10 @@ links:
 
 {{#extend "base"}}
   	{{#content "main"}}
-    		{{#each links}}
-    			 <div class="mrb-4 mrt-4">{{> link}}</div>
-    		{{/each}}
+    		<div class="pdt-10 pdl-10">
+            {{#each links}}
+                <div class="mrb-4 mrt-4">{{> link}}</div>
+            {{/each}}
+        </div>
   	{{/content}}
 {{/extend}}
