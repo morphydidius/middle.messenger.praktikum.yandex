@@ -3,22 +3,24 @@ stylesheets:
   - ../../static/fonts/fonts.css
   - ../styles/main.scss
 title: Вход
-inputs:
+fields:
   - label: Логин
     type: text
     name: login
+    intro: true
     invalid: Неправильный логин
   - label: Пароль
     type: password
     name: password
+    intro: true
 label: Логин
 buttons:
-  - type: default
+  - type: button
     text: Авторизоваться
     width: 100
-  - type: simple
-    text: Нет аккаунта?
-    width: 100
+links:
+  - href: #
+    link: Нет аккаунта?
 ---
 
 {{#extend "base"}}

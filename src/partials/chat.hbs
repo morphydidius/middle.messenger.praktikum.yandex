@@ -1,0 +1,15 @@
+<div class="chat pos-r d-flex pdt-6 pdb-6 pdl-5 pdr-20 align-items-center {{#if active}}active{{/if}}">
+	<div class="chat__avatar d-flex justify-content-center align-items-center mrr-6">
+		{{#if src}}
+			<img src="{{ src }}">
+		{{/if}}
+	</div>
+	<div class="chat__message d-flex dir-column">
+		<div class="chat__message__name mrb-4">{{ name }}</div>
+		<div class="chat__message__text">{{ text }}</div>
+	</div>
+	<div class="chat__time pos-a">{{ time }}</div>
+	{{#if newCount}}
+		<div class="chat__new pos-a d-flex justify-content-center align-items-center">{{ newCount }}</div>
+	{{/if}}
+</div>

@@ -1,0 +1,17 @@
+<div class="sidebar hv-100">
+	<div class="sidebar__header pdt-10 pdl-5 pdr-5">
+		{{#each headerLinks}}
+			<div class="mrb-10 text-right">
+				{{> link}}
+			</div>
+		{{/each}}
+		{{#each fields}}
+			{{> input }}
+		{{/each}}
+	</div>
+	<div class="chats">
+		{{#each chats}}
+			{{> chat}}
+		{{/each}}
+	</div>
+</div>

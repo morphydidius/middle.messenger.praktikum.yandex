@@ -31,12 +31,20 @@ links:
   - href: ./loader_page.hbs
     link: Лоадер
     type: main
+  - href: ./chats.hbs
+    link: Выбрать чат
+    type: main
+  - href: ./chat_example.hbs
+    link: Диалог
+    type: main
 ---
 
 {{#extend "base"}}
   	{{#content "main"}}
-    		{{#each links}}
-    			 <div class="mrb-4 mrt-4">{{> link}}</div>
-    		{{/each}}
+    		<div class="pdt-10 pdl-10">
+            {{#each links}}
+                <div class="mrb-4 mrt-4">{{> link}}</div>
+            {{/each}}
+        </div>
   	{{/content}}
 {{/extend}}
