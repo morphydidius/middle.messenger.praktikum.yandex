@@ -36,7 +36,7 @@ div {
 		background-color: transparent;
 	}
 
-	&--default {
+	&[type='button'] {
 		color: var(--color-white);
 		background-color: var(--color-blue);
 
