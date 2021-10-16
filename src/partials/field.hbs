@@ -1,0 +1,21 @@
+<div class="field{{#if intro}} mrb-8{{else}} mrb-2{{/if}}">
+	{{#if intro}}
+		<label class="pdt-4 pdb-4">
+			<span>{{ label }}</span>
+			{{> input}}
+			<span class="invalid">{{ invalid }}</span>
+		</label>
+	{{/if}}
+	{{#if settings}}
+		<label class="d-flex justify-content-between align-items-center w-100 {{#if disabled}} pdt-6 pdb-6{{else}} pdt-4 pdb-4{{/if}}">
+			<span class="field__name">{{ label }}</span>
+			<span class="field__enter">
+				{{#if disabled}}
+					{{ placeholder }}
+				{{else}}
+					{{> input}}
+				{{/if}}
+			</span>
+		</label>
+	{{/if}}
+</div>

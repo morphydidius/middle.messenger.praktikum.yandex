@@ -1,0 +1,11 @@
+{{#extend "base"}}
+  	{{#content "main"}}
+  		<div class="modal">
+			<div class="modal__overlay w-100 h-100 d-flex justify-content-center align-items-center">
+				<div class="modal__window" style="width: {{ width }}px">
+					{{#block "content"}}{{/block}}
+				</div>
+			</div>
+		</div>
+  	{{/content}}
+{{/extend}}

@@ -1,0 +1,60 @@
+---
+stylesheets:
+  - ../../static/fonts/fonts.css
+  - ../styles/main.scss
+title: Список чатов
+chats:
+  - src: ../../static/img/cat.jpg
+    name: John
+    text: text1text1
+    time: '23:50'
+    newCount: 2
+  - name: Margareth
+    text: text2text2
+    time: '11:45'
+    newCount: 10
+  - name: Jack
+    text: lorem ipsum
+    time: '10:33'
+  - name: Светлана
+    text: тестовый текст, проба
+    time: '01:30'
+  - name: Максим
+    text: Летят утки
+    time: '00:45'
+    newCount: 1
+  - name: Вероника
+    text: Сегодня в 3.30 произошло странное
+    time: 'Вчера'
+  - name: Анатолий
+    text: Обещал вернуть, возвращаю
+    time: 'Вчера'
+  - name: Мама
+    text: Купи еще этих прекрасных булок
+    time: 'Пн'
+  - name: Лена
+    text: На митинге задержали моего другана
+    time: 'Вс'
+  - name: Общество мертвых поэтов
+    text: Что такое метафора?
+    time: 'Сб'
+  - name: Встреча с друзьями
+    text: Ну когда уже соберемся?
+    time: 'Пт'
+fields:
+  - type: search
+    name: search
+    placeholder: Поиск
+headerLinks:
+  - href: #
+    link: Профиль >
+---
+
+{{#extend "base"}}
+  	{{#content "main"}}
+  		  <div class="d-flex w-100 hv-100">
+            {{> chats-sidebar }}
+            {{> chats-dummy }}
+        </div>
+  	{{/content}}
+{{/extend}}
